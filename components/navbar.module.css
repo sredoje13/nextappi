@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitter:wght@300&family=Mochiy+Pop+One&display=swap');
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    color: inherit;
+    width: 100%;
+    height:auto;
+    margin-bottom: 100px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;}
+  .navbar h1{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    width: 50%;
+    margin-left: 15%;
+  font-size: 1000%;
+  color:rgb(158, 168, 97);
+  background-color: inherit;
+  text-shadow: 0px 0px 10px rgb(4, 129, 46); 
+  }
+  .image2
+  {
+    position: absolute;
+    z-index: 100;
+   margin-bottom: 0px;
+  margin-left:55% ;
+    width:400px;
+    height:400px;
+   
+  }
+  .image1{
+    margin-right: 0%;
+    cursor: pointer;
+  
+
+  }
+  .image1:hover{
+   scale:0.9
+  }
+  .spiner{
+    animation: App-logo-spin infinite 3s linear;
+    font-size: xx-large;
+    color:rgb(152, 204, 32);
+   
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(1000deg);
+    }
+  }
+  @media only screen and (max-width:1350px){
+
+    .navbar h1{
+      font-size: 800%;
+    }
+    .image2{
+      margin-left:55% ;
+      width:300px;
+      height:300px;
+    }
+    .image1{
+
+    }
+  }
+  @media only screen and (max-width:1150px){
+
+    .navbar h1{
+     font-size: 550%;
+    }
+    .image2{
+      margin-left:55% ;
+      width:220px;
+      height:220px;
+    }
+    .image1{
+      width:150px;
+      height:150px;
+      margin-right: 5%;
+    }
+  }
+  @media only screen and (max-width:790px){
+
+    .navbar h1{
+     font-size: 450%;
+    }
+    .image2{
+      margin-left:55% ;
+      width:170px;
+      height:170px;
+    }
+    .image1{
+      width:100px;
+      height:100px;
+      margin-right: 10%;
+    }
+  }
+  @media only screen and (max-width:650px){
+
+    .navbar h1{
+     font-size: 350%;
+    }
+    .image2{
+      margin-left:55% ;
+      width:120px;
+      height:120px;
+    }
+    .image1{
+      width:80px;
+      height:80px;
+      margin-right: 10%;
+    }
+  }
+  @media only screen and (max-width:535px){
+
+    .navbar h1{
+     font-size: 250%;
+    }
+    .image2{
+      margin-left:55% ;
+      width:80px;
+      height:80px;
+    }
+    .image1{
+      width:50px;
+      height:50px;
+      margin-right: 10%;
+    }
+  }
+  @media only screen and (max-width:410px){
+
+    .navbar h1{
+     font-size: 150%;
+    }
+    .image2{
+      margin-left:55% ;
+      width:50px;
+      height:50px;
+    }
+    .image1{
+    
+    }
+  }

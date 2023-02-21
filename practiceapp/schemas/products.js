@@ -1,0 +1,29 @@
+export default{
+    name:"product",
+    title:"Product",
+    type:"document",
+    fields:[
+        {name:"image",
+        type:"array",
+        of:[{type:"image"}],
+        options:{hotspot:true},
+        title:"Image"},
+        {name:"name",
+         title:"Name",
+         type:"string"},
+         {name:"price",
+         title:"Price",
+         type:"number"},
+         {name:"slug",
+         title:"Slug",
+         type:"slug",
+        options:{
+            sourse:"name",
+            maxLenght:50
+        }},
+         {name:"description",
+         title:"Description",
+         type:"string"},
+
+    ]
+}
