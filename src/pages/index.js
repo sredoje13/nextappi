@@ -2,6 +2,7 @@ import { client } from 'lib/client'
 import { Main } from 'practiceapp/components'
 import Image1  from '../public/My project.png'
 import  Image2  from '../public/arrow.png'
+
 import Navbar from 'components/Navbar'
 import { useContext,useState } from 'react'
 import { CartContext } from 'store/context'

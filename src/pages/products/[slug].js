@@ -1,6 +1,6 @@
 "use client"
-import { Details } from './components/details'
-import { Maybe } from './components/maybe'
+import Details from './components/details'
+import Maybe from './components/maybe'
 import { client } from 'lib/client'
 import { Shopcart } from 'practiceapp/components'
 import {useContext} from 'react'
@@ -10,7 +10,7 @@ import { useRouter } from 'next/dist/client/router'
 const Pagee=({product,products})=>{
     const router=useRouter()
     console.log(router)
-  const {showcart,windowSize}=useContext(CartContext)
+  const{showcart,windowSize}=useContext(CartContext)
 
 return (
     <div style={{marginTop:"10px"}}> 

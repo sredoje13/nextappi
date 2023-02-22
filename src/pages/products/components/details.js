@@ -3,8 +3,8 @@ import { urlFor } from 'lib/client'
 import { useContext } from 'react'
 import { CartContext } from 'store/context'
 import Link from 'next/link'
-export function Details(props) {
-  const[disabledbutton,setdisabled]=useState(true)
+import Image from 'next/image'
+function Details(props) {
 
   const {additemone,cartitems,
     totalprice,
@@ -14,12 +14,11 @@ export function Details(props) {
   const [productqty,setproductqty]=useState(0)
     const {product}=props
      const [index,setindex]=useState(0)
-   const[clasname,setclasname]=useState("")
  
   
      const imagess=product.image?.map((item,i)=>
      (<div key={i} onMouseEnter={()=>{setindex(i)}}>
-  <img className={index===i?"productdetails-images hoverimages": "productdetails-images"} src={urlFor(item).url()} alt='slicice'/>
+  <Image width="300" height="300" className={index===i?"productdetails-images hoverimages": "productdetails-images"} src={urlFor(item).url()} alt='slicice'/>
   </div>
   )
  
@@ -46,7 +45,7 @@ export function Details(props) {
             
               <div className="productdetails-leftside">
               <p>{product.name}</p>
-              <img className="productdetails-image" src={ urlFor(product.image[index]).url()} alt="details"/>
+              <Image width="300" height="300" className="productdetails-image" src={ urlFor(product.image[index]).url()} alt="details"/>
              <div className="imagess-div">{imagess}</div>
               </div>
   
@@ -63,5 +62,6 @@ export function Details(props) {
           </div>
       );
   }
+  export default Details
   
  

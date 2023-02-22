@@ -1,14 +1,15 @@
 import { Shopcart } from "../../practiceapp/components";
 import Aos from "aos";
 import { useEffect } from "react";
-import Image from '../../components/My project (1).png'
+import Image2 from '../../components/My project (1).png'
 import { useContext, useState } from "react";
 import { CartContext } from "../../store/context";
+import Image from "next/image";
 import 'aos/dist/aos.css';
 import Link from "next/dist/client/link"
 const Shopcart2=(props)=>{
 let nocartitems;
-console.log(Image)
+
     const {cartitems,windowSize}=useContext(CartContext)
     console.log(windowSize)
     if(cartitems.length===0){
@@ -49,7 +50,7 @@ console.log(Image)
  cartitem="cartitem2"
  divofoneitem="divofoneitem2"
  />
-{nocartitems&&<img className="shopcartimage" src={Image.src} href="slika"/>}
+{nocartitems&&<Image width="300" alt="/" height="300" className="shopcartimage" src={Image2.src} href="slika"/>}
         </div></div>
     )
 }

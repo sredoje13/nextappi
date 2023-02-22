@@ -22,7 +22,7 @@ function Products(props) {
             <h1 className="product-h1">
             {props.name}
             </h1>
-            <img src={props.src} alt="naocare"/> 
+            <Image width="300" height="300" src={props.src} alt="naocare"/> 
             <div className="product-description"><BsSunglasses fontSize={35}
             style={{marginBottom:"10px"}}
             /><br></br> {props.description}</div>
